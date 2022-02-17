@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function onOver(elemento) {
+        elemento.style.backgroundColor = 'red'
+      }
+
+      function onOut(elemento) {
+        elemento.style.backgroundColor = 'cornflowerblue'
+      }
+    </script>
+
+    <style>
+      img {
+        width: 200px;
+        margin-bottom: 25px;
+      }
+
+      div {
+        display: inline;
+        padding: 10px;
+        font-size: 2rem;
+        background-color: cornflowerblue;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+
+  <body onload="console.log('Pagina completamente carregada')">
+    <img
+      src="https://pixabay.com/get/g74c2ebb385d85cb92a833244afc582e00a446d39e43e3a16dc7df040c884de6aa2ba6853f5e79664223bac85d808649ea4e368d14f96a738c93fdff1ec8c5ed0a671ee7f7f5e66dc64d0103cd5f66a1b_640.jpg"
+      alt=""
+    />
+    <br />
+    <div onmouseover="onOver(this)" onmouseout="onOut(this)">Click</div>
+    
+  </body>
+</html>
